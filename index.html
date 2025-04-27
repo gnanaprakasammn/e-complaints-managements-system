@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Complaint Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #296bdd;
+            padding: 20px;
+        }
+        .navbar a {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    padding: 8px 25px;
+    padding-left: 20px;
+}
+
+/* Smooth movement on hover */
+.navbar a:hover {
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* Animated underline effect */
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: white;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+    color: white;
+}
+
+
+/* Neon glow effect */
+
+
+.navbar a:hover {
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+        .hero-section {
+            
+            background: url("index.jpg") no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            
+        }
+        .hero-section::before {
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+}
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .btn-primary {
+            background-color: red;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+        .footer {
+            background-color: #1E4E9F;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        h3{
+            color: white;
+            font-weight: bolder;
+        }
+        .sec{
+            width:80%;
+            height:250px;
+            display: flex;
+            position: relative;
+            left:120px;
+            bottom: 30px;
+            z-index: 1;
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            flex-direction: column;
+        }
+        .p1{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        .p2{
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <h3>E-COMPLAINT MANAGEMENT</h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="users/">User Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="users/registration.php">User Registration</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admin/">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="fw-bold">WELCOME TO E-COMPLAINT MANAGEMENT SYSTEM</h1>
+            <h2 class="fw-bold">The Easiest Way To E-Complaint Online</h2>
+            <button class="btn btn-primary mt-3">Get Started</button>
+        </div>
+    </section>
+    <div class="sec">
+        <p class="p1">File E-Complaint Easily</p>
+        <p class="p2">Fight back against unfair treatment! Sign in today and start filling complaints on various topics and feilds.</p>
+        
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 E-Complaint Management</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+  
